@@ -1,5 +1,13 @@
+
+
 	# Facebook4j
 	#
+	# With this library/framework you can create a FacebookLive video via code, using java. When you create a Live Video this will be showed in your page/profile
+	#
+	# To use this library you first need to generate an access token (look TOKEN.md)
+	#
+
+
 	############
 	# For support ask on http://stackoverflow.com/ and insert facebook4live-api-v1 tags in your question
 	############
