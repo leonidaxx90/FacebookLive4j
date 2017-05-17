@@ -1,4 +1,9 @@
-# Facebook4j
+	# Facebook4j
+	#
+	############
+	# For support ask on http://stackoverflow.com/ and insert facebook4live-api-v1 tags in your question
+	############
+
 
 	/**
 	*	MANDATORY OPERATION
