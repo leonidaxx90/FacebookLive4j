@@ -1,5 +1,3 @@
-package testFaceboojk;
-
 import facebook.api.factory.FactoryFacebookLive;
 import facebook.api.interfaces.IFacebookClient;
 import facebook.bean.BaseLiveVideoResponseBean;
