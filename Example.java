@@ -114,7 +114,7 @@ public class Example {
         	/**
         	 * Get all Live Videos
         	 */
-        	BaseLiveVideoResponseBean liveVideos =  facebook.getLiveVideo(response4.getId());
+        	BaseLiveVideoResponseBean liveVideos =  facebook.getLiveVideos();
         	LiveVideosResponseBean response7 = (LiveVideosResponseBean) liveVideos; 
         	/**
         	 * loop on response7 ...
