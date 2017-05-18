@@ -9,7 +9,7 @@ import facebook.bean.GetOrCreateOrUpdateLiveVideoResponseBean;
 import facebook.bean.LiveVideosResponseBean;
 import facebook.bean.UpdateLiveVideoRequestBean;
 
-public class Main {
+public class Example {
 
 	public static void main(String[] args)throws Exception{
 		
