@@ -8,6 +8,8 @@ public class CreateLiveVideoScheduledRequestBean extends BaseLiveVideoRequestBea
     private String scheduled_custom_profile_image;
     private String status;
     private String is_manual_mode;
+    private String title;
+    private String description;
 
     public String getPlanned_start_time() {
         return planned_start_time;
@@ -39,5 +41,21 @@ public class CreateLiveVideoScheduledRequestBean extends BaseLiveVideoRequestBea
 
     public void setIs_manual_mode(String is_manual_mode) {
         this.is_manual_mode = is_manual_mode;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
