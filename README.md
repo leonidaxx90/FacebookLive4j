@@ -1,32 +1,26 @@
 
 
-	# Facebook4j
-	#
-	# With this library/framework you can create a FacebookLive video via code, using java. When you create a Live Video this will be showed in your page/profile
-	#
-	# To use this library you first need to generate an access token (look TOKEN.md)
-	#
+# Facebook4j
+
+ With this library/framework you can create a FacebookLive video via code, using java. When you create a Live Video this will be showed in your page/profile
+ To use this library you first need to generate an access token (look TOKEN.md)
+
+![](https://www.google.it/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjEuovd_fvTAhWFVRoKHWkRB2wQjRwIBw&url=https%3A%2F%2Fwww.forexinfo.it%2FFacebook-Live-cos-e-come-funziona&psig=AFQjCNFIEsJTA4ZtmR0ZOrDRhXp6KiQeNQ&ust=1495284152102303)
+
+### For support ask on http://stackoverflow.com/ and insert facebook4live-api-v1 tags in your question
 
 
-	############
-	# For support ask on http://stackoverflow.com/ and insert facebook4live-api-v1 tags in your question
-	############
+# Installation
+
+ 1) Create facebook.properties file (look src/test/resources/facebook.properties) and place it in your project root
+
+ 2) Import facebook jar file (located in dist folder) in your project
+
+ 3) Look Example.java for code example.
 
 
-	/**
-	*	MANDATORY OPERATION
-	*
-	* 	1) Create facebook.properties file (look src/test/resources/facebook.properties) and place it in your project root
-	*
-	*	2) Import facebook jar file (located in dist folder) in your project
-	*
-	*	3) Look Example.java for code example.
-	**/
-
-
-	/**
-         * ADVANCED CUSTOMIZATION
-         */
+# ADVANCED CUSTOMIZATION
+         
         
         
         /**
