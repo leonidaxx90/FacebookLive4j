@@ -20,7 +20,7 @@
 
 # ADVANCED CUSTOMIZATION
   If you want provide a different wrapper (not recommend) to call web api you need create a java class
-  extends AbstractFacebookLiveClient implements IFacebookClient. Here provide you custom implementation
+  extends __AbstractFacebookLiveClient_ and implements _IFacebookClient. Here provide you custom implementation
   If you want provide a different mechnism (not recommend) to read configuration (for example a DB rather a file), you must
   create a java class and extends AbstractConfiguration. Here provide you custom implementation. In this case you need override loadConfig()
   Then call factory with the your full name class's and path to your config file
@@ -30,23 +30,26 @@
                 "my.pkg.custom.ConfigurationImplCustom",
                 "/path/to/facebook.properties");
 
-		/**
-		*	If you want provide a different wrapper implementation and path properties file
-		**/
+  ```
+ 
+  If you want provide a different wrapper implementation and path properties file
+
+   ```
         IFacebookClient facebook2 = factoryFacebookLive.getFacebookClient(
         		"facebook.api.impl.custom.FacebookLiveImplCustom",
                 "/custom/facebook.properties");
    ```
   
-  ## Reload facebook.propertie file 
+  ## Reload _facebook.properties_ file 
   Config file is a singleton. If during your execution you need to load different config you need call clearConfig()
   and after this istruction re-call factory
   
   ``` 
    factoryFacebookLive.clearConfig();
+   IFacebookClient facebook3 = factoryFacebookLive.getFacebookClient("/facebook.properties_2");
   ```		
         
-  The core code look for config file (facebook.properties) file in root of you project
+  To default the core code look for config file (facebook.properties) file in root of you project
   If you want use default implementation but you place your config file not in defualt place, you can call factory in this way
          
   ```      
