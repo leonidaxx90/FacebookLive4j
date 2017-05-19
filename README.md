@@ -3,7 +3,7 @@
 # Facebook4j
 
  With this library/framework you can create a FacebookLive video via code, using java. When you create a Live Video this will be showed in your page/profile
- To use this library you first need to generate an access token (look TOKEN.md)
+ To use this library you first need to generate an access token (look _TOKEN.md_)
 
 ![](https://www.forexinfo.it/local/cache-vignettes/L620xH313/arton39304-93f9f.jpg?1495036366)
 ### For support ask on http://stackoverflow.com/ and insert _facebook4live-api-v1_ tags in your question
@@ -11,19 +11,19 @@
 
 # Installation
 
- 1) Create facebook.properties file (look src/test/resources/facebook.properties) and place it in your project root
+ 1) Create facebook.properties file (look _src/test/resources/facebook.properties_) and place it in your project root
 
  2) Import facebook jar file (located in dist folder) in your project
 
  3) Look Example.java for code example.
 
 
-# ADVANCED CUSTOMIZATION
+# Advanced Customization
   If you want provide a different wrapper (not recommend) to call web api you need create a java class
-  extends __AbstractFacebookLiveClient_ and implements _IFacebookClient. Here provide you custom implementation
+  extends _AbstractFacebookLiveClient_ and implements _IFacebookClient_. Here provide you custom implementation
   If you want provide a different mechnism (not recommend) to read configuration (for example a DB rather a file), you must
-  create a java class and extends AbstractConfiguration. Here provide you custom implementation. In this case you need override loadConfig()
-  Then call factory with the your full name class's and path to your config file
+  create a java class and extends AbstractConfiguration. Here provide your custom implementation. In this case you need override loadConfig()
+  Then call factory with the your full name class's and path to your config file and populate _prop_ hashmap (look _src/main/java/facebook/api/interfaces/AbstractConfiguration.java_)
   ```      
         IFacebookClient facebookCustom = factoryFacebookLive.getFacebookClient(
                 "my.pkg.custom.FacebookLiveImplCustom",
