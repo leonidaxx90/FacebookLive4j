@@ -6,7 +6,7 @@
  To use this library you first need to generate an access token (look _TOKEN.md_)
 
 ![](https://www.forexinfo.it/local/cache-vignettes/L620xH313/arton39304-93f9f.jpg?1495036366)
-### For support ask on http://stackoverflow.com/ and insert _facebook4live-api-v1_ tags in your question
+### For support ask on http://stackoverflow.com/ and insert _facebooklive4j-api-v1_ tags in your question
 
 
 # Installation
