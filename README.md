@@ -56,3 +56,7 @@
   ```      
   IFacebookClient facebook3 = factoryFacebookLive.getFacebookClient("/my/custom/path/facebook.properties");
   ```
+
+
+  ## Code Example
+  In _Example.java_ you can find simple snippet code to use this library.
