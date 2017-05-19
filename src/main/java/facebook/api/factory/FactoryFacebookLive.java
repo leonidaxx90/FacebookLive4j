@@ -58,7 +58,7 @@ public class FactoryFacebookLive {
     /**
      * Return custom facebookClient impl with default config file impl and custom configFilePath or default configFilePath
      *
-     * @param fullClassNameFacebookClient
+     * @param pathConfigFile
      * @return
      * @throws Exception
      */
