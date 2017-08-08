@@ -1,4 +1,5 @@
 package facebook.bean;
+
 /**
  * Created by salvo on 11/05/17.
  */
@@ -17,7 +18,7 @@ public class UpdateLiveVideoRequestBean extends BaseLiveVideoRequestBean{
     private String planned_start_time;
     private String place;
     private String privacy;
-    private String schedule_custom_profile_image;
+    private String scheduled_custom_profile_image;
     private String status;
     private String title;
 
@@ -93,12 +94,12 @@ public class UpdateLiveVideoRequestBean extends BaseLiveVideoRequestBean{
         this.privacy = privacy;
     }
 
-    public String getSchedule_custom_profile_image() {
-        return schedule_custom_profile_image;
+    public String getScheduled_custom_profile_image() {
+        return scheduled_custom_profile_image;
     }
 
-    public void setSchedule_custom_profile_image(String schedule_custom_profile_image) {
-        this.schedule_custom_profile_image = schedule_custom_profile_image;
+    public void setScheduled_custom_profile_image(String scheduled_custom_profile_image) {
+        this.scheduled_custom_profile_image = scheduled_custom_profile_image;
     }
 
     public String getStatus() {

@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import facebook.exception.FacebookException;
 
+
 /**
  * Created by salvo on 11/05/17.
  */
@@ -44,9 +45,9 @@ public abstract class AbstractConfiguration {
         InputStream input = null;
         input = this.getClass().getResourceAsStream(path);
         if(input != null){
-        	prop.load(input);
+            prop.load(input);
         }else{
-        	throw new FacebookException("File " + path + "not found. Place this file under your projet package and provide full path (ex: /my/pkg/facebook.properties");
+            throw new FacebookException("File " + path + "not found. Place this file under your projet package and provide full path (ex: /my/pkg/facebook.properties");
         }
     }
 }

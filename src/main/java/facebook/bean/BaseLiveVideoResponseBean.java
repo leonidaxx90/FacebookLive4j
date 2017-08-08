@@ -18,4 +18,9 @@ public class BaseLiveVideoResponseBean {
     public void setOriginalJson(String originalJson) {
         this.originalJson = originalJson;
     }
+
+    @Override
+    public String toString(){
+        return getOriginalJson();
+    }
 }

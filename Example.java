@@ -46,13 +46,13 @@ public class Example {
         	/**
         	 * Create scheduled live video
         	 */
-        	CreateLiveVideoScheduledRequestBean liveVideoBean = new CreateLiveVideoScheduledRequestBean();
-        	liveVideoBean.setPlanned_start_time("1495238400");//time in unix timestamp
-        	liveVideoBean.setScheduled_custom_profile_image("/Users/salvo/Desktop/foto.jpg");//optionally
-        	
-        	BaseLiveVideoResponseBean scheduledLiveVideoCreated = facebook.createScheduledLiveVideo(liveVideoBean);
-        	GetOrCreateOrUpdateLiveVideoResponseBean response2 = (GetOrCreateOrUpdateLiveVideoResponseBean) scheduledLiveVideoCreated;
-        	System.out.println(response2.getId());
+        	UpdateLiveVideoRequestBean liveVideoBean = new UpdateLiveVideoRequestBean();
+            liveVideoBean.setPlanned_start_time("1502794800");//Max is 7 days ahead
+            liveVideoBean.setScheduled_custom_profile_image("/path/to/my/foto.jpg");
+            BaseLiveVideoResponseBean scheduledLiveVideoCreated = null;
+            scheduledLiveVideoCreated = facebook.createScheduledLiveVideo(liveVideoBean);
+            GetOrCreateOrUpdateLiveVideoResponseBean response = (GetOrCreateOrUpdateLiveVideoResponseBean) scheduledLiveVideoCreated;
+    	
        		/**
         	 * 
         	 * response.getStream_url() return the url rtmp.
